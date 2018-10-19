@@ -24,6 +24,10 @@ class ViewController: UIViewController {
         // bgImg.frame = view.frame; makes image fit frame
     }
     
+    @IBAction func unwindFromSKillVC(unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
         override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
