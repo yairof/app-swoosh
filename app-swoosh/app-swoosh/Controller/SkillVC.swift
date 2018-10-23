@@ -10,8 +10,13 @@ import UIKit
 
 class SkillVC: UIViewController {
 
+    // ! means that there will be a value and it will not be nil.
+    var player: Player!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(player.desiredLeague)
 
         // Do any additional setup after loading the view.
     }

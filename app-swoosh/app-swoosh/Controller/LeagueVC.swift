@@ -45,4 +45,12 @@ class LeagueVC: UIViewController {
         player.desiredLeague = leagueType
         nextBtn.isEnabled = true
     }
+    
+    // grabs the destination we are going to (SkillVC) and stores it in the skillVC variable created below after let.
+    // prepareForSegue is always called before viewDidLoad (on the destination view controller)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC {
+            skillVC.player = player
+        }
+    }
 }

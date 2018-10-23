@@ -9,8 +9,8 @@
 import Foundation
 
 struct Player {
-    var desiredLeague: String?
-    var selectedSkillLevel: String?
+    var desiredLeague: String!
+    var selectedSkillLevel: String!
 }
 
 // Whenever you need to work with data put in a Struct or Class, never pass around multiple variables between view controllers.
